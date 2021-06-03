@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testumbraco", "testumbraco\testumbraco.csproj", "{406DECFB-4602-4FA4-8049-9BEA0A34CB96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{406DECFB-4602-4FA4-8049-9BEA0A34CB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406DECFB-4602-4FA4-8049-9BEA0A34CB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406DECFB-4602-4FA4-8049-9BEA0A34CB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406DECFB-4602-4FA4-8049-9BEA0A34CB96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A32287C-AA93-4B79-86CF-2D75465C852C}
+	EndGlobalSection
+EndGlobal
