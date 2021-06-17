@@ -1,0 +1,60 @@
+﻿@inherits UmbracoViewPage<Contact>
+
+
+@if (ViewBag.Check == null)
+{
+
+
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p class="text-center">You can send an email here</p>
+                <div class="my-5">
+                    @using (Html.BeginUmbracoForm("RenderForm", "Contact"))
+                    {
+                        <div class="form-floating">
+
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter your name...", id = "inputName" })
+                            @Html.ValidationMessageFor(m => m.Name)
+                            <label for="inputName">Name</label>
+                        </div>
+                        <div class="form-floating">
+
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email..." })
+                            @Html.ValidationMessageFor(m => m.Email)
+                            <label for="inputEmail">Email address</label>
+                        </div>
+
+                        <div class="form-floating">
+                            @Html.TextBoxFor(m => m.Message, new { @class = "form-control", placeholder = "Message...", rows = "6" })
+                            @Html.ValidationMessageFor(m => m.Message)
+                            <label for="inputMessage">Message</label>
+                        </div>
+
+                        <br />
+
+
+                        <input class="btn btn-primary text-uppercase" type="submit" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+else
+{
+<form class="text-center">
+    @if (ViewBag.Check == true)
+    {
+    <h1 class="text-center">@Model.SuccesMessage</h1>
+    }
+    else
+    {
+    <h1 class="text-center">@Model.ErrorMessage</h1>
+    }
+    <input href="~/contact" class="btn btn-primary text-uppercase text-center" value="Send another email" type="submit" />
+</form>
+}
+
+
